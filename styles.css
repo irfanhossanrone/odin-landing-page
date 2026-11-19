@@ -7,76 +7,79 @@
 }
 
 body {
-    font-family: 'Roboto' , sans-serif;
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    
 }
 
-li {
-    list-style: none;    
+ul {
+    list-style: none;
 }
 
 a {
     text-decoration: none;
-    color: #E5E7EB;
     font-size: 18px;
+    color: #E5E7EB;
 }
 
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     background-color: #1F2937;
-    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15%;
 }
 
 .logo {
-    display: flex;
-    align-items: center;
     color: #F9FAF8;
     font-size: 24px;
+    font-weight: 700;
 }
 
 .nav ul {
     display: flex;
-    gap: 16px;
-    align-items: center;
+    gap: 24px;
 }
 
 .hero {
     background-color: #1F2937;
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+    padding: 20px 15% 40px;
 }
 
-.details h1 {
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.hero-details h1 {
     color: #F9FAF8;
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 25px;
 }
 
-.details p {
+.hero-details p {
     color: #E5E7EB;
     font-size: 18px;
+    margin-bottom: 25px;
 }
 
-.details .hero-button {
+.hero-button {
     background-color: #3882F6;
-    color: white;
-    width: 150px;
-    height: 50px;
+    color: #F9FAF8;
+    border-radius: 8px;
     font-size: 18px;
     font-weight: 700;
-    border-radius: 10px;
-}
-
-.hero .details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: wrap;
+    width: 150px;
+    height: 55px;
+    padding: 10px ;
+    border: none;
 }
 
 .hero img {
@@ -86,81 +89,103 @@ a {
 .information {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 18px;
-    margin-top: 18px;
-    margin-bottom: 18px;
+    gap: 20px;
+    align-items:center;
+    padding: 20px 15%;
+}
+
+.information h2 {
+    font-size: 32px;
+    font-weight: 900;
+    text-align: center;
 }
 
 .box {
     display: flex;
-    flex-direction: row;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 16px;
+    gap: 20px;
 }
 
-.information h2 {
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 900;
+.card {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
 }
 
 .box-img {
-    width: 100%;
+    width: 150px;
     height: 150px;
 }
 
 .box-p {
     font-size: 16px;
-    font-weight: 500;
+    font-weight: 400;
 }
 
 .quote {
-    background-color: #E5E7EB;
-    font-size: 36px;
-    color: #1F2937;
-    font-weight: 300;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    padding: 30px 15%;
+    background-color: #E5E7EB;
+
 }
 
-.quote-p {
+.quote p {
     font-style: italic;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    font-size: 36px;
 }
 
 .quote-subtext {
-    font-weight: 500;
-    display: flex;
-    justify-content: flex-end;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: right;
 }
 
 .action {
     background-color: #3882F6;
     color: #F9FAF8;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    gap: 20px;
+    padding: 50px 15%;
+    margin: 20px 15%;
+    border-radius: 10px;
+}
+
+.action h3 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.action p {
+    font-size: 16px;
+    color: #E5E7EB;
 }
 
 .action-button {
     background-color: #3882F6;
     color: #F9FAF8;
-    border-color: #F9FAF8;
-    width: 150px;
-    height: 50px;
-    border-radius: 10px;
     font-size: 18px;
     font-weight: 700;
+    width: 150px;
+    height: 55px;
+    border-radius: 8px;
+    padding: 10px;
+    border: 2px solid #F9FAF8;
 }
 
 footer {
     background-color: #1F2937;
     color: #E5E7EB;
-    display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    display: flex;
+    font-size: 18px;
+    padding: 20px 15%;
 }
