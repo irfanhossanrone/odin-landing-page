@@ -1,0 +1,244 @@
+/* =========================================
+   1. Base Reset & Typography
+   ========================================= */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    color: #1F2937;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #E5E7EB;
+    font-size: 18px;
+}
+
+a:hover {
+    color: #FFFFFF;
+}
+
+/* =========================================
+   2. Header & Navigation
+   ========================================= */
+header {
+    background-color: #1F2937;
+    padding: 20px 15%;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.logo {
+    color: #F9FAF8;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav ul {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+/* =========================================
+   3. Hero Section
+   ========================================= */
+.hero {
+    background-color: #1F2937;
+    padding: 80px 15% 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 48px;
+}
+
+.details {
+    flex: 1;
+    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+}
+
+.details h1 {
+    color: #F9FAF8;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.15;
+}
+
+.details p {
+    color: #E5E7EB;
+    font-size: 18px;
+    line-height: 1.45;
+    margin-bottom: 6px;
+}
+
+.hero-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.hero img {
+    width: 480px;
+    max-width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #6B7280;
+}
+
+/* =========================================
+   4. Information Cards Section
+   ========================================= */
+.information {
+    padding: 64px 15% 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.information h2 {
+    font-size: 36px;
+    font-weight: 900;
+    color: #1F2937;
+    text-align: center;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 48px;
+}
+
+.card {
+    width: 168px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+
+.box-img {
+    width: 168px;
+    height: 168px;
+    object-fit: cover;
+    border: 4px solid #3882F6;
+    border-radius: 14px;
+}
+
+.box-p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #4B5563;
+    line-height: 1.35;
+}
+
+/* =========================================
+   5. Quote Section
+   ========================================= */
+.quote {
+    background-color: #E5E7EB;
+    padding: 110px 22%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.quote-p {
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+    color: #1F2937;
+    line-height: 1.3;
+}
+
+.quote-subtext {
+    font-weight: 700;
+    font-size: 20px;
+    color: #1F2937;
+    text-align: right;
+}
+
+/* =========================================
+   6. Call to Action Banner
+   ========================================= */
+.action {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    margin: 88px 15%;
+    padding: 48px 96px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 32px;
+}
+
+.action h3 {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.action p {
+    font-size: 16px;
+    color: #E5E7EB;
+}
+
+.action-button {
+    background-color: #3882F6;
+    color: #F9FAF8;
+    border: 2px solid #F9FAF8;
+    border-radius: 8px;
+    padding: 8px 32px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* =========================================
+   7. Footer
+   ========================================= */
+footer {
+    background-color: #1F2937;
+    color: #E5E7EB;
+    padding: 36px 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin-top: auto;
+}
